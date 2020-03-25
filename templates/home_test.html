@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <title>homepage</title>
+    <style>
+        .fullscreenvideo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+            -webkit-transition: 1s opacity;
+            transition: 1s opacity;}
+        .videocontainer{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -100;}
+        .videocontainer:before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: block;
+            z-index: -1;
+            top: 0;
+            left: 0;}
+        body{
+            margin: 0;
+            padding: 0;
+            /*初始化为0*/}
+        .head_box {
+            background-color: rgba(241, 241, 241, 0.98);
+            height: 55px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            text-align: center;
+        }
+        .head_content {
+            margin: auto;
+            /*居中*/
+            width: 55%;
+            /*高度与上一层div保持一致*/
+            background-color: rgba(177, 193, 202, 0);
+            /*颜色与head_box一致*/
+            display: inline-block;
+            height: 100%;
+
+            line-height: 55px;
+        }
+
+
+        .tb{
+            color: #5a5a5a;
+            font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+            font-size: 1.0rem;
+            display: inline-block;
+            width: 160px;
+            }
+        .tb:hover {
+            text-decoration:underline;
+            font-size: 1.15rem;
+            color: #171717;
+
+        }
+        .logo_box{
+            display: inline-block;
+            float: left;
+            width: 22%;
+        }
+        .logo {
+            {#background: url("/static/husky.jpg") no-repeat 0 0;#}
+            background-color: rgba(177, 193, 202, 0);
+            height: 55px;
+            width: 100%;
+            float: left;
+            color: #5a5a5a;
+            font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+            font-size: 1.75rem;
+            line-height: 55px;
+
+        }
+        .auth_box{
+            display: inline-block;
+            float: right;
+            width: 10%;
+			right: 40px;
+            position: absolute;
+        }
+        .auth {
+            background-color: rgba(177, 193, 202, 0);
+            height: 55px;
+            width: 100%;
+            float: right;
+            color: #5a5a5a;
+            font-family: Nobel,Helvetica,Arial,Roboto,Sans-Serif;
+            font-size: 18px;
+            line-height: 55px;
+
+        }
+        a{
+            text-decoration: none;
+            /*去掉所有a标签文字text下划线*/
+        }
+        .action_menu{
+            display: inline-block;
+            text-align: center;
+            height: 100%;
+            vertical-align:middle;
+
+        }
+
+        .tb{
+            letter-spacing: 2px;
+            font-family: 'Microsoft YaHei UI','SimHei';
+            font-weight: 400;
+            font-size: 18px;
+        }
+
+        .action_menu.a{
+
+
+        }
+
+
+        .main_content_box{
+            opacity:1;
+            position: fixed;
+            float: left;
+            top:190px;
+
+        }
+        .m-content-nav__item{
+            color: rgba(237, 241, 237, 0.99);
+            margin-left: 60px;
+            height: 110px;
+            font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+            list-style:none;
+            {#去掉导航栏前小黑点#}
+            vertical-align:middle;
+
+        }
+        .m-content-nav__text{
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-shadow:4px 2px 5px #000;
+        }
+        .m-content-nav__text:hover {
+            text-decoration:underline;
+            font-size: 1.93rem;
+        }
+        .m-content-nav__subtext{
+            font-size: 0.9rem;
+            display: none;
+        }
+
+
+
+
+        .foot-box{
+            margin-bottom: 0;
+            position: fixed;
+            bottom: 20px;
+            color: whitesmoke;
+            font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+            font-size: 0.9rem;
+            width: 100%;
+
+        }
+        .foot-nav{
+            text-align: center;
+            margin: 5px auto;
+            width: 50%;
+        }
+        .foot-text{
+            color: whitesmoke;
+             font-family: Nobel,Helvetica,Arial,Roboto,Sans-Serif;
+        }
+        .author{
+            margin-top:6px;
+            text-align:center;
+            font-family: Nobel,Helvetica,Arial,Roboto,Sans-Serif;
+        }
+
+    </style>
+
+    <link href="/static/main/css/nav.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!-----------右侧导航---------->
+<div class="c-concierge-tool">
+	<nav class="c-concierge-tool__cta-bar">
+		<ul class="c-concierge-tool__list">
+
+			<li class="c-concierge-tool__list-item">
+				<a class="ui-button" href="/under_construction/">
+					<span class="ui-button__inner">
+						<span class="ui-button__text"><img src="/static/main/images/shuobo.png" width="56px" height="56px">硕博招生</span>
+							<i class="ui-icon">
+
+							</i>
+					</span>
+				</a>
+			</li>
+
+			<li class="c-concierge-tool__list-item">
+				<a class="ui-button" href="/under_construction/">
+					<span class="ui-button__inner">
+						<span class="ui-button__text"><img src="/static/main/images/zhuli.png" width="56px" height="56px">本科助理</span>
+      						<i class="ui-icon">
+							</i>
+					</span>
+				</a>
+			</li>
+
+			<li class="c-concierge-tool__list-item">
+				<a class="ui-button" href="/under_construction/">
+					<span class="ui-button__inner">
+						<span class="ui-button__text"><img src="/static/main/images/keyan.png" width="56px" height="56px">科研合作</span>
+							<i class="ui-icon">
+							</i>
+					</span>
+				</a>
+			</li>
+
+		</ul>
+	</nav>
+</div>
+
+
+
+
+<!------------左侧导航------------>
+<div class="left_box">
+	<ul class="left-box_list">
+		<li class="left-box-list_item">
+			<a class="left-box-list_text" href="/under_construction/">文献服务</a>
+			<div class="left-box_link1">
+				<a href="/under_construction/" class="left-box-link_text">文献服务</a>
+				<a href="/under_construction/" class="left-box-link_text">文献服务</a>
+			</div>
+		</li>
+		<li class="left-box-list_item">
+			<a class="left-box-list_text" href="/under_construction/">科研项目</a>
+			<div class="left-box_link2">
+				<a href="/under_construction/" class="left-box-link_text">科研项目</a>
+				<a href="/under_construction/" class="left-box-link_text">科研项目</a>
+				<a href="/under_construction/" class="left-box-link_text">科研项目</a>
+			</div>
+		</li>
+		<li class="left-box-list_item">
+			<a class="left-box-list_text" href="/under_construction/">科研论文</a>
+			<div class="left-box_link3">
+				<a href="/under_construction/" class="left-box-link_text">科研论文</a>
+				<a href="/under_construction/" class="left-box-link_text">科研论文</a>
+				<a href="/under_construction/" class="left-box-link_text">科研论文</a>
+			</div>
+		</li>
+		<li class="left-box-list_item">
+			<a class="left-box-list_text" href="/under_construction/">数据资源</a>
+			<div class="left-box_link4">
+				<a href="/under_construction/" class="left-box-link_text">数据资源</a>
+				<a href="/under_construction/" class="left-box-link_text">数据资源</a>
+			</div>
+		</li>
+	</ul>
+</div>
+
+
+
+<!--左下角语言栏-->
+<div class="language_box">
+	<a class="language-box_a" href="/homepage/language/" target="_self">
+		<span class="language-box_inner">
+			<span class="language-box_text"><img class="language-box_img" src="/static/main/images/ChinaFlag.png">&emsp;中国 - 中文</span>
+		</span>
+	</a>
+</div>
+
+
+
+
+<div class="head_box">
+    <div class="logo_box">
+        <a href="/under_construction/" class="logo" style="font-family:Roboto, Lucida Grande, DejaVu Sans, Bitstream Vera Sans, Verdana, Arial, sans-serif"> Maja Data Science Lab</a>
+    </div>
+    <div class="head_content">
+        <div class="action_menu">
+            <a href="/homepage/introduction/" class="tb">团队介绍</a>
+            <a href="/under_construction/" class="tb">学习资源</a>
+            <a href="/under_construction/" class="tb">玛珈统计云</a>
+            <a href="/under_construction/" class="tb">自动文献回顾</a>
+        </div>
+    </div>
+    <div class="auth_box">
+        <a href="/login/" class="auth"><img src="/static/main/images/login.png" width="23px" height="23px"></a>
+
+    </div>
+</div>
+
+
+
+
+
+<div class="videocontainer">
+    <video class="fullscreenvideo" id="bgvid" playsinline="" autoplay="" muted="" loop="">
+        <source src="/static/homepage/720.mp4" type="video/mp4">
+    </video>
+    </div>
+
+
+
+
+
+</body>

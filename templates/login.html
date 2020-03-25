@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+<style>
+    .login-box{width: 300px;height: 300px;left:40%;top:25%;position: absolute;}
+    .login-title{color:#3c3c3c;font-size: 20px;font-weight: 500;margin: 8px auto 13px 0;font-family: Nobel,Helvetica,Arial,Roboto,Sans-Serif;}
+    .login-context{width: 250px;height: 40px;margin:0;padding:0 0 0 47px;font-size: 17px;font-weight: 300;font-family: 'Microsoft YaHei UI','SimHei';}
+    .login-username{margin-bottom:20px;padding:0;height: 40px;width: 40px;position: relative}
+    .user-label{z-index:6;border-right:1px solid #bdbdbd;border-left:1px solid #bdbdbd;top:1px;left:0;position:absolute;width: 42px;height: 42px;background: #dddfe2 url(/static/homepage/images/user.png) center;line-height: 40px;}
+    .login-password{margin-bottom:20px;padding:0;height: 40px;width: 40px;position: relative}
+    .pwd-label{border-right:1px solid #bdbdbd;border-left:1px solid #bdbdbd;top:1px;left:0;position:absolute;width: 42px;height: 42px;background: #dddfe2 url(/static/homepage/images/user.png) center;line-height: 40px;}
+    .login-submit{margin:0;padding:0;width: 100%;height:42px;}
+    .button-submit{width: 100%;height: 100%;font-size: 20px;font-weight: 500;color: #fff;letter-spacing:8px;background: #0458c4;font-family: 'Microsoft YaHei UI','SimHei';border:0;cursor: pointer;}
+    .not-register{text-align: right;margin-top: 13px;}
+
+</style>
+
+
+</head>
+<body>
+
+
+<div class="login-box">
+    <div class="login-title">Login</div>
+    <form action="/login/" method="post">
+        <div class="login-username">
+            <label class="user-label" for="user-name"><img src="/static/homepage/images/user.png" width="42px" height="42px"></label>
+            <input class="login-context" type = 'text' placeholder="邮箱" name = 'email1' >
+        </div>
+
+        <div class="login-password">
+            <label class="pwd-label" for="pass-word"><img src="/static/homepage/images/pwd.png" width="43px" height="43px"></label>
+             <input class="login-context" type="password" placeholder="密码" name='pwd1'>
+        </div>
+
+        <div class="login-submit">
+            <button type = 'submit' class="button-submit">登录</button>
+        </div>
+
+        <span>{{ msg }}</span>
+
+        <div class="not-register">
+            <a href="/register/">未注册？</a>
+        </div>
+
+    </form>
+</div>
+
+
+</body>
+</html>

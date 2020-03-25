@@ -1,0 +1,37 @@
+/*---------------右侧导航--------------*/
+.c-concierge-tool{z-index:0;position:absolute;right:0;top:0;height:100%;width:3.5rem;background-color:#1a1a1a;}
+.c-concierge-tool__cta-bar{justify-content:flex-start;height:100%;position:fixed;align-items: center;}
+.c-concierge-tool__list{width: auto;display: block;margin: 0 auto;padding:0;top: 35%;position: absolute;}
+.c-concierge-tool__list-item:first-child{border-top: 1px solid #5b6164;}
+.c-concierge-tool__list-item{height:5rem;line-height:5rem;align-items: center;border-bottom: 1px solid #5b6164;border-right:1px solid #5b6164;transition: transform .75s ease;transform: translateX(0);background-color:#1a1a1a;display:block;width:13rem;}
+.c-concierge-tool__list-item:hover{margin-left: -9.5rem;transition: .5s ease;transform: translateX(0);}
+.ui-button{justify-content:flex-start;margin-bottom: 0;display:flex;cursor: pointer;}
+.ui-button__inner{font-size:1.2rem;letter-spacing: 1.5px;font-weight: 400;font-family: 'Microsoft YaHei UI','SimHei';}
+.ui-button__text{display: block;color: #fff;}
+.ui-button__text,img{vertical-align: middle;}
+.ui-button__text.img{opacity: 0.95}
+
+
+
+
+/*--------------左侧导航--------------*/
+.left_box{height:300px;width:200px;top:40%;left:3%;position: absolute;}
+.left-box_list{height:100%;width:120px;position:relative;margin:0;padding:0;list-style:none}
+.left-box-list_item{width:100%;height:40px;line-height: 40px;float:left;display: block;text-align: center;font-family: 'Microsoft YaHei UI','SimHei';letter-spacing:4px;text-shadow:4px 2px 5px #000;}
+.left-box-list_text{font-size: 1.3rem;letter-spacing: 5px;color:#fff;}
+.left-box-link_text{font-size: 1.2rem;letter-spacing: 5px;color:#fff;overflow: hidden;}
+
+.left-box_link1{height:84px;width:100px;top:40px;left:59px;position: absolute;display:none;overflow: hidden;float: left;}
+.left-box-list_item:hover .left-box_link1{display:block;}
+.left-box-list_item:first-child:hover + .left-box-list_item:nth-child(2){margin-top: 85px;}
+
+.left-box_link2{height:126px;width:100px;top:80px;left:59px;position: absolute;display:none;overflow: hidden;float: left;}
+.left-box-list_item:hover .left-box_link2{display:block;}
+.left-box-list_item:hover + .left-box-list_item:nth-child(3){margin-top: 127px;}
+
+.left-box_link3{height:126px;width:100px;top:120px;left:59px;position: absolute;display:none;overflow: hidden;float: left;}
+.left-box-list_item:hover .left-box_link3{display:block;}
+.left-box-list_item:hover + .left-box-list_item:nth-child(4){margin-top: 125px;}
+
+.left-box_link4{height:84px;width:100px;top:160px;left:59px;position: absolute;display:none;overflow: hidden;float: left;}
+.left-box-list_item:hover .left-box_link4{display:block;}

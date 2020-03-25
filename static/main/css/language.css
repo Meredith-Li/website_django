@@ -1,0 +1,28 @@
+
+#language-main{border-top: .5px solid #333;top:100px;width:100%;height:400px;position: absolute;}
+.language_title{font-size: 1.5rem;letter-spacing: 2px;font-weight:400;font-family: 'Microsoft YaHei UI','SimHei';left:50px;position: absolute}
+.language_selector{top:75px;width:100%;position: absolute;}
+.language-selector_list{list-style: none;margin: 0;padding: 0;}
+.language-selector_item{height:30px;line-height:30px;left:50px;position: absolute}
+.language-selector_a{text-decoration: none;}
+.language-selector_img{height:1.25rem;width:1.875rem;vertical-align: middle}
+.language-selector_inner{line-height: 1.5rem;font-size: 1rem;letter-spacing: .5px;font-family: 'Microsoft YaHei UI','SimHei';}
+.language-selector_text{display: block;color: #333;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
